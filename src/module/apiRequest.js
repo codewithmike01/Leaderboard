@@ -1,7 +1,3 @@
-// ID {result: 'Game with ID: xWdhStoWkRebNxUefnnQ added.'}
-//  /games/xWdhStoWkRebNxUefnnQ/scores/
-// {result: 'Game with ID: 5TiAAPGCZSdzS3sSfE2C added.'}
-
 import { inputName, inputScore } from './scoreEntry.js';
 
 export default async function addUserScore() {
