@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&display=swap');
+
 html {
   box-sizing: border-box;
 }
@@ -10,8 +13,28 @@ html {
   margin: 0;
 }
 
+body {
+  font-size: 100%;
+  font-family: 'Merienda One', cursive;
+  /* stylelint-disable-next-line declaration-colon-newline-after */
+  background-image: linear-gradient(
+    to right bottom,
+    #92a5c2,
+    #81b6ca,
+    #81c4c2,
+    #9acfb1,
+    #c4d4a0
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
 h1 {
   padding: 30px 20px;
+  font-family: 'Neonderthaw', cursive;
+  letter-spacing: 1.5px;
+  font-size: 3em;
 }
 
 main {
@@ -36,13 +59,18 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 8px 10px;
+  padding: 0;
   border: 3px solid black;
 }
 
 .scores li {
   list-style-type: none;
   font-weight: bold;
+  padding: 8px 10px;
+}
+
+.score__list li:nth-child(even) {
+  background-color: #fff;
 }
 
 .score__header {
@@ -66,6 +94,8 @@ button {
   box-shadow: 7px 8px 10px -3px rgba(0, 0, 0, 0.55);
   -webkit-box-shadow: 7px 8px 10px -3px rgba(0, 0, 0, 0.55);
   -moz-box-shadow: 7px 8px 10px -3px rgba(0, 0, 0, 0.55);
+  font-family: 'Merienda One', cursive;
+  border-radius: 16px;
 }
 
 form button {
@@ -79,6 +109,8 @@ input[type='text'] {
   border: 2px solid #000;
   padding-left: 5px;
   outline: none;
+  border-radius: 18px;
+  font-family: 'Merienda One', cursive;
 }
 
 .error {
