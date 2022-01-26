@@ -16,6 +16,7 @@ html {
 body {
   font-size: 100%;
   font-family: 'Merienda One', cursive;
+  /* stylelint-disable-next-line declaration-colon-newline-after */
   background-image: linear-gradient(
     to right bottom,
     #92a5c2,
@@ -62,14 +63,14 @@ main {
   border: 3px solid black;
 }
 
-.score__list li:nth-child(even) {
-  background-color: #fff;
-}
-
 .scores li {
   list-style-type: none;
   font-weight: bold;
   padding: 8px 10px;
+}
+
+.score__list li:nth-child(even) {
+  background-color: #fff;
 }
 
 .score__header {
